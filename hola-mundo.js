@@ -8,6 +8,8 @@ console.log(string2)
 console.log(string3)
 console.log(string4)
 
+//
+
 let frace ='javascript es extremadamente genial'
 console.log (frace.length)
 console.log(frace.tolocalelowercase())
