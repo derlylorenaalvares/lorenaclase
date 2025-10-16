@@ -1,4 +1,4 @@
-let string1 = "Hola mundo"
+/*let string1 = "Hola mundo"
 let string2 = "javascript es genial"
 let string3 = `${string1} feliz :)`
 let string4 = string1 + string2
@@ -88,4 +88,68 @@ const copiaCanasta = canasta.map( (item) => {
 );
 const copiaCanasta2 = canasta.filter( (item) =>  item !== 'pan' );
 
-console.log('copiaCanasta2=', copiaCanasta2);
+console.log('copiaCanasta2=', copiaCanasta2);*/
+
+/*
+let canasta = ["manzana", "pera","naranja","uva"]
+
+for (fruta of canasta){
+    console. log(fruta)
+}
+
+const listadecompras = {
+    manzana: 5,
+    pera: 3,
+    naranja: 2,
+    uva: 1,
+}
+
+for (fruta in listadecompras) {
+    console.log(fruta);
+}
+ for (fruta in listadecompras) {
+    console.log(`${fruta} : ${listadecompras[fruta]}`)
+ }
+ */
+/*
+let contador =0;
+while (contador < 10){
+    console.log(contador);
+    contador++;
+}*/
+/*
+ function calculateDiscountedprice (price, diacountpercentaje) {
+    const discount = (price + discountpercentaje) / 100
+    const pricewhithdiscount = price - discount
+
+    return pricewhithdiscount 
+}
+const originalprice = 100
+const discountpercentaje = 20
+const finalprice = calculateDiscountedprice(originalprice,discountpercentaje)
+
+console.log('original price $' + originalprice)
+console.log('discount: $' + discountpercentaje + '%')
+console.log('price with discount: $' + finalprice)
+*/
+/*
+const rocket = {
+    name: 'falcon 9',
+    launchMessage: function launchMessage () {
+        console.log (this.name)
+    }  
+}
+
+rocket.launchMessage()
+
+
+const greting = (name) => {
+return `hola, $(name)'
+
+};
+
+const  =(name ) => `Hola, ${name}`;
+
+resultfun =Igreting1('juan');
+const =Igreting2 =newhgreting('pedro');
+*/
