@@ -3,6 +3,8 @@
 body {
     font-family: "Poppins", sans-serif;
     background-color: #041562;
+
+
 }
 
 #seleccionar-mascota, #seleccionar-ataque {
@@ -12,65 +14,113 @@ body {
     flex-direction: column;
     height: 100vh;
 }
-
 .titulo {
-    font-family: "Fredoka", sans-serif;
-    color: white;
-    font-size: 32px;
+font-family: "Fredoka", sans-serif;
+ color: white;
+ font-size: 32px;
 }
-
 .subtitulo {
-    color: white;
-    font-size: 20px;
+   color: white;
+   font-size: 20px;
 }
 
-.tarjetas {
+
+.tarjetas, .contenedor-ataques {
     display: flex;
-    gap: 10px
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tarjeta-de-mokepon {
-    width: 180px;
-    height: 100px;
-    background-color: #11468F;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
+   width: 180px;
+   height: 100px;
+   background-color: #11468f;
+   padding: 10px;
+   box-sizing: border-box;
+   margin: 10px;
+   border-radius: 20px;
+   display: flex;
+   color: white;
+   justify-content: center;
+   align-items: center;
+   
 }
 
 .tarjeta-de-mokepon img {
     width: 80px;
+
 }
 
 #boton-mascota {
-    width: 180px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
-    font-family: "Poppins", sans-serif;
-    margin-top: 20px;
+     width: 180px;
+     height: 40px;
+     border-radius: 20px;
+     background: transparent;
+     border: 2px solid white;
+     color: white;
+     font-family: "Poppins", sans-serif;
+     margin: 20px 0px;
 }
 
+
 .contenedor-ataques button {
-    background-color: #11468F;
+    background-color: #11468f;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 20px;
     border-color: transparent;
-    width: 100px;
+    width: 180px;
     color: white;
     font-family: "Poppins", sans-serif;
-    
-
 }
+
+#mensajes {
+    width: 280px;
+    background: #EEEEEE;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 input {
     display: none;
 }
 
+input:checked + .tarjeta-de-mokepon {
+    border: 2px solid #00ff00;
+}
+
+#boton-reiniciar {
+    border: none;
+    color: #11468f;
+    font-family: "Poppins", sans-serif;    
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-top: 0px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px) {
+    .tarjetas, .contenedor-ataques {
+        flex-direction: column;
+    }
+}
